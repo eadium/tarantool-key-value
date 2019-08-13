@@ -1,10 +1,20 @@
 ## Simple API for key-value storage based on Tarantool's memtx engine
 With this API you can easily create, edit and remove any JSON-foramtted document.
-# Create 
 
+You can try it [here](kv.rasseki.pro)
+
+## Running on your machine 
+The default port is 8080.
+
+```bash
+docker build -t kv-app https://github.com/eadium/tarantool-key-value.git
+docker run -p 8080:8080 -t kv-app
+```
+
+# Create 
 Used to create a new database entry.
 
-**URL** : `/kv/`
+**URL** : `/kv`
 
 **Method** : `POST`
 
