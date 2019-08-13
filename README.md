@@ -1,7 +1,5 @@
 ## Simple API for key-value storage based on Tarantool`s memtx engine
----
 With this API you can easily create, edit and remove any JSON-foramtted document.
-
 # Create 
 
 Used to create a new database entry.
@@ -52,7 +50,6 @@ Used to create a new database entry.
 ```
 
 ## Error Response
----
 ### 400 BAD REQUEST
 
 **Condition** : If requst body does not contain fields `key` and `value`.
@@ -66,7 +63,6 @@ Used to create a new database entry.
     "message": "Invalid body"
 }
 ```
----
 ### 409 CONFLICT
 
 **Condition** : Value with this key already exists.
@@ -109,7 +105,6 @@ Used to get an existing database entry.
 ```
 
 ## Error Response
----
 ### 404 NOT FOUND
 
 **Condition** : If the key does not exist.
@@ -171,7 +166,6 @@ Used to update an existing database entry.
 ```
 
 ## Error Response
----
 ### 400 BAD REQUEST
 
 **Condition** : If requst body does not contain fields `key` and `value`.
@@ -185,7 +179,6 @@ Used to update an existing database entry.
     "message": "Invalid body"
 }
 ```
----
 ### 404 NOT FOUND
 
 **Condition** : If the key does not exist.
@@ -222,7 +215,6 @@ Used to delete value by a key.
 ```
 
 ## Error Response
----
 ### 404 NOT FOUND
 
 **Condition** : If the key does not exist.
