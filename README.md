@@ -15,7 +15,7 @@ Used to create a new database entry.
 ```json
 {
     "key": "[some string]",
-    "value": [any JSON]
+    "value": "[any JSON]"
 }
 ```
 
@@ -133,7 +133,7 @@ Used to update an existing database entry.
 
 ```json
 {
-    "value": [any JSON]
+    "value": "[any JSON]"
 }
 ```
 
