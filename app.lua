@@ -2,6 +2,7 @@
 
 local http  = require('http.server')
 local json  = require('json')
+local tlog = require('log')
 local space_name = 'kv'
 
 local function log(...)
@@ -10,6 +11,7 @@ local function log(...)
         log_string = log_string .. tostring(v) .. ' '
     end
     print(log_string)
+    tlog.info(log_string)
 end
 
 local function http_error(code, message)
@@ -95,7 +97,7 @@ local function delete_object(req)
     return http_json({message = 'Successfully deleted'})
 end
 
-box.cfg{}
+box.cfg{log_level=5, log='app_log.txt'}
 box.schema.space.create(space_name, {if_not_exists = true})
 pk = box.space[space_name]:create_index('primary', {
     unique = true,
