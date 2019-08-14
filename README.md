@@ -1,5 +1,5 @@
 ## Simple API for key-value storage based on Tarantool's memtx engine
-With this API you can easily create, edit and remove any JSON-foramtted document.
+With this API you can easily create, edit and remove any JSON-formatted document.
 
 You can try it [here](http://kv.rasseki.pro/)
 
