@@ -1,7 +1,7 @@
 ## Simple API for key-value storage based on Tarantool's memtx engine
 With this API you can easily create, edit and remove any JSON-formatted document.
 
-You can try it [here](http://kv.rasseki.pro/)
+You can try it [here](http://kv.rasseki.pro/), port 80.
 
 ## Running on your machine 
 The default port is 8080.
